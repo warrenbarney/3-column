@@ -50,11 +50,13 @@ main {
 }
 
 [class^=more_] {
-  padding: 1em 2em;
+  padding: 0.9em 2em;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
   border-radius: 2em;
   background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  border: 3px solid hsl(0, 0%, 95%);
 }
 
 .card_sedan {
@@ -63,18 +65,26 @@ main {
   background-color: hsl(31, 77%, 52%);
 }
 
-.more_sedan {
+.card_sedan a {
   color: hsl(31, 77%, 52%);
-  border: hsl(31, 77%, 52%);
+}
+
+.card_sedan a:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
 }
 
 .card_suv {
   background-color: hsl(184, 100%, 22%);
 }
 
-.more_suv {
+.card_suv a {
   color: hsl(184, 100%, 22%);
-  border: hsl(184, 100%, 22%);
+}
+
+.card_suv a:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
 }
 
 .card_lux {
@@ -83,9 +93,13 @@ main {
   border-bottom-right-radius: 0.5em;
 }
 
-.more_lux {
+.card_lux a {
   color: hsl(179, 100%, 13%);
-  border: hsl(179, 100%, 13%);
+}
+
+.card_lux a:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
 }
 
 .attribution {

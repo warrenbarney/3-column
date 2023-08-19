@@ -48,7 +48,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90em;
+    height: 84em;
     width: 325px;
     margin-top: 2em;
     // border: 3px dotted red;
@@ -59,7 +59,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    height: 30em;
+    height: 28em;
     width: 320px;
     // border: 1px dotted blue;
     padding: 1.5em 3em;
@@ -68,7 +68,7 @@ main {
 
 [class^="heading_"] {
     font-family: $font-family1;
-    font-size: 2.75em;
+    font-size: 2.5em;
     color: $very_light_gray;
 }
 
@@ -80,7 +80,7 @@ main {
 }
 
 [class^="more_"] {
-    padding: .9em 2em;
+    padding: .7em 2em;
     font-family: $font-family2;
     font-size: 15px;
     border-radius: 2em;
@@ -162,7 +162,16 @@ main {
     main {
         flex-direction: row;
         width: 975px;
+        height: 35em;
+    }
+
+    [class^="card_"] {
+        width: 305px;
         height: 31em;
+    }
+
+    [class^="para_"] {
+        line-height: 1.6;
     }
 
     .card_lux {
@@ -177,5 +186,8 @@ main {
         border-bottom-left-radius: .5em;
     }
 
+    [class^="more_"] {
+        margin-top: 3em;
+    }
 
 }

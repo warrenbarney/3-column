@@ -125,7 +125,7 @@ main {
   main {
     flex-direction: row;
     width: 975px;
-    height: 35em;
+    height: 32em;
   }
   [class^=card_] {
     width: 305px;

@@ -1,0 +1,164 @@
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// Bright orange: hsl(31, 77%, 52%)
+// Dark cyan: hsl(184, 100%, 22%)
+// Very dark cyan: hsl(179, 100%, 13%)
+
+// ### Neutral
+
+// Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+// Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+$font-family1: 'Big Shoulders Display', cursive;
+$font-family2: 'Lexend Deca', sans-serif;
+$bright_orange: hsl(31, 77%, 52%);
+$dark_cyan: hsl(184, 100%, 22%);
+$very_dark_cyan: hsl(179, 100%, 13%);
+$transparent_white: hsla(0, 0%, 100%, 0.75);
+$very_light_gray: hsl(0, 0%, 95%);
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $very_light_gray;
+    max-width: 100vw;
+    min-height: 100vh;
+    // border: 3px dotted red;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90em;
+    width: 325px;
+    margin-top: 2em;
+    // border: 3px dotted red;
+}
+
+[class^="card_"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 30em;
+    width: 320px;
+    // border: 1px dotted blue;
+    padding: 1.5em 3em;
+
+}
+
+[class^="heading_"] {
+    font-family: $font-family1;
+    font-size: 2.75em;
+    color: $very_light_gray;
+}
+
+[class^="para_"] {
+    font-family: $font-family2;
+    font-size: 15px;
+    color: $transparent_white;
+    line-height: 2;
+}
+
+[class^="more_"] {
+    padding: 1em 2em;
+    font-family: $font-family2;
+    font-size: 15px;
+    border-radius: 2em;
+    background-color: $very_light_gray;
+}
+
+.card_sedan {
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+    background-color: $bright_orange;
+}
+
+.more_sedan {
+    color: $bright_orange;
+    border: $bright_orange;
+}
+
+.card_suv {
+    background-color: $dark_cyan;
+}
+
+.more_suv {
+    color: $dark_cyan;
+    border: $dark_cyan;
+}
+
+.card_lux {
+    background-color: $very_dark_cyan;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+.more_lux {
+    color: $very_dark_cyan;
+    border: $very_dark_cyan;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    margin-bottom: 2em;
+
+}
+
+.attribution a {
+
+    color: $bright_orange;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: $dark_cyan;
+    transition: all 0.2s ease-in;
+}
+
+@media (min-width: 769px) {
+
+    main {
+        flex-direction: row;
+        width: 975px;
+        height: 31em;
+    }
+
+    .card_lux {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: .5em;
+        border-top-right-radius: .5em;
+    }
+
+    .card_sedan {
+        border-top-right-radius: 0;
+        border-top-left-radius: .5em;
+        border-bottom-left-radius: .5em;
+    }
+
+
+}
